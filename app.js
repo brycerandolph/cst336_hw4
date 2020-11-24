@@ -1,11 +1,14 @@
 const express = require("express");
 const app = express();
+var faker = require("faker"); 
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
+const randomName = faker.name.findName();
+
 //routes
 app.get("/", function(req, res){
-    res.render("index.html");
+    res.render("index.ejs", {"name" : randomName});
 });
 
 app.get("/hdd", function(req, res){
