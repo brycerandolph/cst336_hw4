@@ -21,6 +21,6 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "Faker": "^0.7.2",
+    "Faker": "^0.7.2"
   }
 }
