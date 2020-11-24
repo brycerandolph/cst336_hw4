@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-var faker = require("faker"); 
+
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
@@ -8,6 +8,7 @@ const randomName = faker.name.findName();
 
 //routes
 app.get("/", function(req, res){
+    var faker = require("faker"); 
     res.render("index.ejs", {"name" : randomName});
 });
 
