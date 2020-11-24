@@ -22,6 +22,5 @@
   },
   "devDependencies": {
     "Faker": "^0.7.2",
-    "faker": "^5.1.0"
   }
 }
